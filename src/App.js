@@ -9,8 +9,8 @@ function Counter (props){
     <div>
       <p>Title : {props.title}</p>
       <h1>Counter:{props.counter}</h1>
-      <button onClick={()=> props.onTambah()}>tambah</button>
-      <button onClick={()=> props.onKurang()}>kurang</button>
+      <button id='tambah' onClick={()=> props.onTambah()}>tambah</button>
+      <button id='kurang' onClick={()=> props.onKurang()}>kurang</button>
     </div>
     
   )
@@ -80,7 +80,7 @@ class App extends React.Component {
         
         />
         <hr/>
-        <button onClick={()=>this.handleToggleClock()}>Toggle Clock</button>
+        <button id='toggle' onClick={()=>this.handleToggleClock()}>Toggle Clock</button>
         {this.state.isClock && <Clock/>}
       </div>
       );
